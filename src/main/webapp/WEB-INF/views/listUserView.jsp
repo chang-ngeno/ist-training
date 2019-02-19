@@ -56,11 +56,36 @@
             <td><form:input path="lastname" /></td>
             <td><form:errors path="lastname" cssClass="error" /></td>
         </tr>
+
         <tr>
-            <td><spring:message code="lbl.email" text="Email Id" /></td>
+            <td><spring:message code="lbl.username" text="Username" /></td>
+            <td><form:input path="username" /></td>
+            <td><form:errors path="username" cssClass="error" /></td>
+        </tr>
+
+        <tr>
+            <td><spring:message code="lbl.password" text="Password" /></td>
+            <td><form:input path="password" /></td>
+            <td><form:errors path="password" cssClass="error" /></td>
+        </tr>
+
+        <tr>
+            <td><spring:message code="lbl.email" text="Email" /></td>
             <td><form:input path="email" /></td>
             <td><form:errors path="email" cssClass="error" /></td>
         </tr>
+        <tr>
+            <td><spring:message code="lbl.address" text="Address" /></td>
+            <td><form:input path="address" /></td>
+            <td><form:errors path="address" cssClass="error" /></td>
+        </tr>
+
+        <tr>
+            <td><spring:message code="lbl.phone" text="Phone" /></td>
+            <td><form:input path="phone" /></td>
+            <td><form:errors path="phone" cssClass="error" /></td>
+        </tr>
+
         <tr>
             <td><spring:message code="lbl.role" text="role" /></td>
             <td><form:select path="role" items="${allRoles}" itemValue="id" itemLabel="name" /></td>
