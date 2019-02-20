@@ -70,7 +70,6 @@ public class RegistrationController
     }
 
     @RequestMapping(method = RequestMethod.POST)
-
     public String submitForm(
             @ModelAttribute("user") User userVO,
             BindingResult result,
